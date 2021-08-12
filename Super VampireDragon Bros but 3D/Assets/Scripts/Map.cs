@@ -56,12 +56,13 @@ public class Map : MonoBehaviour
         Model_1.SetActive(false);
         Model_2.SetActive(true);
     }
+
     IEnumerator DelayCoroutine()
     {
         Character.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
         for (int i = 0; i < 2f; i++)
         {
-            Character.transform.Translate(Vector3.right * -2, Space.World);
+            Character.transform.Translate(Vector3.right * -2f, Space.World);
             yield return new WaitForSeconds(0.1f);
             
         }
