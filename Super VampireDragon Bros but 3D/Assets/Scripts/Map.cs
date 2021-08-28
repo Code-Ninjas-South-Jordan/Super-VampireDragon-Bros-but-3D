@@ -13,23 +13,27 @@ public class Map : MonoBehaviour
 
     public Map map;
 
+    private bool right = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        Model_2.SetActive(false);
         Level = 1;
         LevelsComplete = 0;
+        Model_2.SetActive(false);
+        StartCoroutine(ChangeModel());
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(ChangeModel());
-
         if(Level == LevelsComplete || Level < LevelsComplete)
         {
-            if(Input.GetKey("right"))
+            if(Input.GetKey("right") && right == true) {
+                right = false;
                 StartCoroutine(DelayCoroutine());
+            }
+
         }
 
         if(Level > 1)
@@ -49,24 +53,28 @@ public class Map : MonoBehaviour
     
     IEnumerator ChangeModel()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         Model_1.SetActive(true);
         Model_2.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         Model_1.SetActive(false);
         Model_2.SetActive(true);
+        StartCoroutine(ChangeModel());
     }
 
     IEnumerator DelayCoroutine()
     {
         Character.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
-        for (int i = 0; i < 2f; i++)
+        for (int i = 0; i < 20f; i++)
         {
-            Character.transform.Translate(Vector3.right * -2f, Space.World);
-            yield return new WaitForSeconds(0.1f);
+            Character.transform.Translate(Vector3.right * -3f, Space.World);
+            yield return new WaitForSeconds(0.01f);
             
         }
+        right = true;
         Level++;
         map.enabled = false;
+        yield return new WaitForSeconds(0.1f);
+        Character.SetActive(false);
     }
 }
