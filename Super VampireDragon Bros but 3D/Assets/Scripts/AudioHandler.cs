@@ -9,7 +9,13 @@ public class AudioHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.Play();
+        StartCoroutine(SoundDelay());
+    }
+
+    IEnumerator SoundDelay()
+    {
+        yield return new WaitForSeconds(2.76f);
+        audioSource.Play(0);
     }
 
 }
