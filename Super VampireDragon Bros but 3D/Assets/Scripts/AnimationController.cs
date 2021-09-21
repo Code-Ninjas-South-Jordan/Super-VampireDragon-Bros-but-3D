@@ -7,7 +7,9 @@ public class AnimationController : MonoBehaviour
     [SerializeField] 
     private Animator animator;
     public AudioClip clip;
+    public AudioClip clip2;
     public AudioSource audioSource;
+    public GameObject pressSpace;
     bool spaceKey = false;
 
 
@@ -36,6 +38,7 @@ public class AnimationController : MonoBehaviour
         else if(spaceKey)
         {
             animator.Play("Start");
+            audioSource.PlayOneShot(clip2, 0.7f);
         }
 
         if(Input.GetKeyDown("space"))
@@ -50,5 +53,4 @@ public class AnimationController : MonoBehaviour
            
         }
     }
-
 }
