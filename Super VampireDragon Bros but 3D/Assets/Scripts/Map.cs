@@ -12,6 +12,7 @@ public class Map : MonoBehaviour
     public int LevelsComplete;
 
     public Map map;
+    public Animator animator;
 
     private bool right = true;
 
@@ -48,6 +49,14 @@ public class Map : MonoBehaviour
                 Level--;
                 map.enabled = false;
             }
+        }
+
+        if(Input.GetKey("space"))
+        {
+            Model_1.SetActive(false);
+            Model_2.SetActive(true);
+            animator.SetBool("spaceKey", true);
+            animator.Play("Jump");
         }
     }
     

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimationController : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class AnimationController : MonoBehaviour
         {
             animator.Play("Start");
             audioSource.PlayOneShot(clip2, 0.7f);
+            SceneManager.LoadScene(1);
         }
 
         if(Input.GetKeyDown("space"))
