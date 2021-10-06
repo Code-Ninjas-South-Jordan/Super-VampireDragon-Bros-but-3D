@@ -22,6 +22,8 @@ public class Map : MonoBehaviour
         Level = 1;
         LevelsComplete = 0;
         Model_2.SetActive(false);
+        transform.position = new Vector3(58.93f, 12.74f, 39.39f);
+        transform.localScale = new Vector3(0.1024273f, 0.1024273f, 0.1024273f);
         StartCoroutine(ChangeModel());
     }
 
@@ -51,12 +53,10 @@ public class Map : MonoBehaviour
             }
         }
 
-        if(Input.GetKey("space"))
+        if(Input.GetKeyDown("space"))
         {
-            Model_1.SetActive(false);
-            Model_2.SetActive(true);
             animator.SetBool("spaceKey", true);
-            animator.Play("Jump");
+            map.enabled = false;
         }
     }
     

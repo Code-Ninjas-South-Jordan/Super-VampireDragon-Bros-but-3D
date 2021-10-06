@@ -6,11 +6,22 @@ public class WorldMapMusic : MonoBehaviour
 {
     public AudioSource audioSource;
     public Map level;
+    public AudioClip World1;
+    public AudioClip World2;
+    public AudioClip World3;
+    public AudioClip World4;
+    public AudioClip World5;
+    public AudioClip World6;
+    public AudioClip World7;
+    public AudioClip World8;
+    public AudioClip World9;
+    public AudioClip World10;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.Play(0);
+        PlayMusic();
     }
 
     // Update is called once per frame
@@ -23,11 +34,11 @@ public class WorldMapMusic : MonoBehaviour
     {
         if(level.Level == 1)
         {
-            audioSource.Play(0);
+            audioSource.PlayOneShot(World1, 0.7f);
         }
         else if(level.Level == 2)
         {
-
+            audioSource.PlayOneShot(World2, 0.7f);
         }
     }
 }
