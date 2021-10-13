@@ -11,13 +11,13 @@ public class AnimationController : MonoBehaviour
     public AudioClip clip2;
     public AudioSource audioSource;
     public GameObject pressSpace;
-    bool spaceKey = false;
 
 
     // Start is called before the first frame update
     void Awake()
     {
         StartCoroutine(AnimationDelay());
+        StartCoroutine(SpaceCheck());
     }
 
     private IEnumerator AnimationDelay()
@@ -28,31 +28,26 @@ public class AnimationController : MonoBehaviour
         animator.SetBool("title", true);
         yield return new WaitForSeconds(1f);
         animator.SetBool("text (space)", true);
+        
     }
 
     void Update()
     {
-        if(!spaceKey)
-        {
-            animator.Play("Change Size - Forever");
-        }
-        else if(spaceKey)
-        {
-            animator.Play("Start");
-            audioSource.PlayOneShot(clip2, 0.7f);
-            SceneManager.LoadScene(1);
-        }
-
         if(Input.GetKeyDown("space"))
         {
-            if(spaceKey)
-            {
-                spaceKey = false;
-            } else if(!spaceKey)
-            {
-                spaceKey = true; 
-            }
-           
+            animator.SetBool("spaceKey", true);
+            Invoke("CallAudio", 0.89f);
+            Invoke("NextScene", 0.1f;)
         }
+    }
+
+    void CallAudio()
+    {
+        audioSource.PlayOneShot(clip2, 0.89f);
+    }
+
+    void NextScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }
