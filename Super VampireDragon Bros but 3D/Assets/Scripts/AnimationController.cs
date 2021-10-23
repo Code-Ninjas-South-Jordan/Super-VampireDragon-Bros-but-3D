@@ -17,7 +17,7 @@ public class AnimationController : MonoBehaviour
     void Awake()
     {
         StartCoroutine(AnimationDelay());
-        StartCoroutine(SpaceCheck());
+        // StartCoroutine(SpaceCheck());
     }
 
     private IEnumerator AnimationDelay()
@@ -36,14 +36,14 @@ public class AnimationController : MonoBehaviour
         if(Input.GetKeyDown("space"))
         {
             animator.SetBool("spaceKey", true);
-            Invoke("CallAudio", 0.89f);
-            Invoke("NextScene", 0.1f;)
+            Invoke("CallAudio", 0f);
+            Invoke("NextScene", 1.3f);
         }
     }
 
     void CallAudio()
     {
-        audioSource.PlayOneShot(clip2, 0.89f);
+        audioSource.PlayOneShot(clip2, 3.5f);
     }
 
     void NextScene()

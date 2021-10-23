@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class SetupMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public AudioSource audioSource;
+    [SerializeField]
+    private AudioClip clip;
+
+    private void PlayGame()
     {
         SceneManager.LoadScene(2);
     }
+
+    public void PlaySound()
+    {
+        audioSource.PlayOneShot(clip, 0.7f);
+        Invoke("PlayGame", 0.1f);
+    }
+
 }

@@ -491,7 +491,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 234062733}
   level: {fileID: 234062730}
-  World1: {fileID: 8300000, guid: 089b02bc200ca4127bc87ad1dc3d4455, type: 3}
   World2: {fileID: 8300000, guid: ef2f87d2a5bc0478bbce60a1d80dbc00, type: 3}
   World3: {fileID: 0}
   World4: {fileID: 0}
@@ -530,7 +529,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 089b02bc200ca4127bc87ad1dc3d4455, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

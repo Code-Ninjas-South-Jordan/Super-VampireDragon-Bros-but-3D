@@ -55,7 +55,7 @@ public class Map : MonoBehaviour
 
         if(Input.GetKeyDown("space"))
         {
-            animator.SetBool("spaceKey", true);
+            animator.SetBool("spaceButton", true);
             map.enabled = false;
         }
     }

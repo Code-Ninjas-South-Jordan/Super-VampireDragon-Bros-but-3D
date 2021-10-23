@@ -6,7 +6,6 @@ public class WorldMapMusic : MonoBehaviour
 {
     public AudioSource audioSource;
     public Map level;
-    public AudioClip World1;
     public AudioClip World2;
     public AudioClip World3;
     public AudioClip World4;
@@ -34,7 +33,7 @@ public class WorldMapMusic : MonoBehaviour
     {
         if(level.Level == 1)
         {
-            audioSource.PlayOneShot(World1, 0.7f);
+            
         }
         else if(level.Level == 2)
         {
