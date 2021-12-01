@@ -1,0 +1,136 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/codeninjas4/Documents/Super-VampireDragon-Bros-but-3D/Super VampireDragon Bros but 3D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50387
+Successfully changed project path to: /Users/codeninjas4/Documents/Super-VampireDragon-Bros-but-3D/Super VampireDragon Bros but 3D
+/Users/codeninjas4/Documents/Super-VampireDragon-Bros-but-3D/Super VampireDragon Bros but 3D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.3f1 (76626098c1c4)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/codeninjas4/Documents/Super-VampireDragon-Bros-but-3D/Super VampireDragon Bros but 3D/Assets
+GfxDevice: creating device client; threaded=0
+2021-11-30 17:11:48.272 Unity[34326:6852130] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-11-30 17:11:48.272 Unity[34326:6852130] Metal devices available: 1
+2021-11-30 17:11:48.272 Unity[34326:6852130] 0: Intel(R) Iris(TM) Plus Graphics 640 (low power)
+2021-11-30 17:11:48.274 Unity[34326:6852130] Using device Intel(R) Iris(TM) Plus Graphics 640 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 640
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56326
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000669 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 33.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.679 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.086 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1677 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.1 MB.
+System memory in use after: 162.1 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2140.
+Total: 2.935645 ms (FindLiveObjects: 0.412303 ms CreateObjectMapping: 0.126069 ms MarkObjects: 2.213755 ms  DeleteObjects: 0.181309 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/New Prefab.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/New Prefab.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9947bd639e2d015099cae4e786c617c6') in 0.246423 seconds
+  Import took 0.251127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.689249 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a23a4e2ad7950db286cc7449754733') in 0.005547 seconds
+  Import took 0.011665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.583399 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea6442f3a2d058fd511e0885cbe55e0') in 0.084092 seconds
+  Import took 0.088018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.893026 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da4420f80accc0fb068e450d3322df8') in 0.013391 seconds
+  Import took 0.017733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.162661 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcbb75c47e9b1c76f9aa2830a31a8012') in 0.015529 seconds
+  Import took 0.019770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.452070 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1fbe35bcddd6612c7054daf65e8f87') in 0.044426 seconds
+  Import took 0.048160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.627040 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9144ce21f59fce987562c3c3eb1b329') in 0.050228 seconds
+  Import took 0.054378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.464969 seconds.
+  path: Assets/Prefabs/ZeroPipe.prefab
+  artifactKey: Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ZeroPipe.prefab using Guid(dd2a86d0d6ad84afe842695fcabaca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a6fc71b44700808d5e617082e99022') in 0.082195 seconds
+  Import took 0.085992 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
