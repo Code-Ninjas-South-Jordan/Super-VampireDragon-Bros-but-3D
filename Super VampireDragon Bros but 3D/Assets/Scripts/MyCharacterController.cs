@@ -5,10 +5,33 @@ using UnityEngine;
 public class MyCharacterController : MonoBehaviour
 {
     public float speed = 3f;
+    public float jumpForce = 14;
+    public Rigidbody rb;
+
+    public bool isGrounded = true; 
+
+    void Start(){
+        rb = GetComponent<Rigidbody>();
+    }
 
     void FixedUpdate(){
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        this.transform.position += new Vector3(-vertical * speed, 0, horizontal * speed);
+        this.transform.Translate(-vertical * speed, 0, horizontal * speed);
+        if(Input.GetKeyDown("space") && isGrounded){
+            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+        }
+    }
+
+    void OnCollision(Collision collision){
+        if(collision.collider.tag == "Ground"){
+            isGrounded = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision){
+        if(collision.collider.tag == "Ground"){
+            isGrounded = false;
+        }
     }
 }
