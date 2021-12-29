@@ -16,14 +16,15 @@ public class MyCharacterController : MonoBehaviour
 
     void FixedUpdate(){
         float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        float vertical = Input.GetAxis("Vertical");  
         this.transform.Translate(-vertical * speed, 0, horizontal * speed);
+
         if(Input.GetKeyDown("space") && isGrounded){
             rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
         }
     }
 
-    void OnCollision(Collision collision){
+    void OnCollisionEnter(Collision collision){
         if(collision.collider.tag == "Ground"){
             isGrounded = true;
         }
