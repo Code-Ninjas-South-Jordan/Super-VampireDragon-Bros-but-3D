@@ -6,6 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
     public MyCharacterController controller;
+    public PlayerAnimation anim;
 
     void Start(){
         controller.dead = false;
@@ -14,7 +15,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!controller.dead){
+        if(!controller.dead && !anim.flagged){
             transform.position = new Vector3(player.transform.position.x + 10f, player.transform.position.y + 5f, player.transform.position.z);
         }
     }

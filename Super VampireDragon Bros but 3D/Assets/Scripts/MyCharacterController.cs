@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MyCharacterController : MonoBehaviour
 {
+
     public float speed = 0.15f;
     public float jumpForce = 10.25f;
 
 
     public Rigidbody rb;
 
-    public bool isGrounded = true; 
     public bool dead;
 
     public Vector3 startPos;
@@ -27,27 +27,6 @@ public class MyCharacterController : MonoBehaviour
             this.transform.Translate(-vertical * speed, 0, horizontal * speed);
         }
 
-    }
-
-    void Update(){
-        if(Input.GetKeyDown("space") && isGrounded){
-            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
-        }
-    }
-
-    void OnCollisionEnter(Collision collision){
-        if(collision.collider.tag == "Ground"){
-            isGrounded = true;
-        }
-        else if(collision.collider.tag == "Death"){
-
-        }
-    }
-
-    void OnCollisionExit(Collision collision){
-        if(collision.collider.tag == "Ground"){
-            isGrounded = false;
-        }
     }
 
     void OnTriggerEnter(Collider other){
